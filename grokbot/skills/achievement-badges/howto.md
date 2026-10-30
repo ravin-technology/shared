@@ -8,13 +8,16 @@ When you finish something real (ship a fix, close a deal, clear a backlog), your
 > 🏆 **Achievement unlocked: Backlog Be Gone**
 > *Forty tickets entered, zero survived.*
 
-It's limited to one badge per reply and a few a day. Bots skip badges when things went wrong or the topic is serious, like health, money, grief, or legal matters.
+Each badge arrives as its own separate message, so it stands out from the rest of the reply. It's limited to one badge per reply and a few a day. Bots skip badges when things went wrong or the topic is serious, like health, money, grief, or legal matters.
 
 ## Setup (about 1 minute)
 1. Open a chat with your main Grok bot, attach `skill.md`, and say: **"Save this as a skill. I opt into achievement badges for all my bots."**
 2. Optional: ask **"Show my badges"** anytime to see your trophy case.
 
-## Your own badge catalog (optional)
+## Your badge catalog
+When you opt in, your bot offers to seed a starter catalog of 5 to 10 badges that fit your work. You can grow it anytime: say **"Add a badge: Coffee Overflow for a fourth cup before noon."** When a bot invents a badge that could happen again, it offers to add it, and repeat wins level up (Level 2, Level 3...).
+
+### Where it lives
 You can invent badges for yourself or your team. Keep them in any place you control, like a Slack channel (for example `#badges`) or a `badges.md` file, and tell your bot where it is: **"My badge catalog is the #badges channel."** Nothing about the location is built into the skill, so use whatever you have.
 
 Write one badge per line:
