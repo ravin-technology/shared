@@ -16,6 +16,7 @@ Write `HANDOFF.md` in a shared folder both bots can read. Include:
 Then give it to the new bot. Create the new bot, or have the human do it, and send it the path.
 
 ## 2. On ice (old bot)
+- Rename itself to `<NAME>-YYYYMMDD` (the handoff date, e.g. `Zed-20261104`) with UpdateProfile, so the new bot can take the plain name (`Zed`).
 - Pause every routine. Don't delete them.
 - Tell the teammates to send its work to the new bot from now on.
 - Ask the human to hide the old bot from the sidebar. Its chat, memory and routines stay, and with nothing waking it, it uses almost no tokens.
