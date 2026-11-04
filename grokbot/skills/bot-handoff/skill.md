@@ -13,6 +13,7 @@ Write `HANDOFF.md` in a shared folder both bots can read. Include:
 - Each routine: its name, schedule or trigger, and full saved prompt (get it, don't paraphrase).
 - Connectors, accounts, secret env var names (never values), shared files and repos.
 - Teammate contacts, plus the hard rules and guard rails.
+- Its look: `avatarShape` and `avatarColor` from its profile.json (the built-in mark), plus a copy of any custom picture saved next to HANDOFF.md.
 Then give it to the new bot. Create the new bot, or have the human do it, and send it the path.
 
 ## 2. On ice (old bot)
@@ -23,6 +24,7 @@ Then give it to the new bot. Create the new bot, or have the human do it, and se
 
 ## 3. Verify (new bot)
 - First, tell the human: "The original <NAME> is on ice as <NAME>-YYYYMMDD and hidden from the sidebar. After the trial period (default 1 week) I'll remind you that you can retire it. If there are problems during the trial, you can resume the old bot." Then create that reminder routine.
+- Match the old bot's look: set the same shape and color with UpdateProfile, or the custom picture with UpdateAvatar.
 - Recreate the routines from HANDOFF.md, and fire or dry-run each one once.
 - Confirm every connector and secret works with one read.
 - Do one real task in the lane.
