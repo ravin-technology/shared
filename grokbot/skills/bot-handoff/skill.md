@@ -19,15 +19,16 @@ Then give it to the new bot. Create the new bot, or have the human do it, and se
 - Rename itself to `<NAME>-YYYYMMDD` (the handoff date, e.g. `Zed-20261104`) with UpdateProfile, so the new bot can take the plain name (`Zed`).
 - Pause every routine. Don't delete them.
 - Tell the teammates to send its work to the new bot from now on.
-- Ask the human to hide the old bot from the sidebar. Its chat, memory and routines stay, and with nothing waking it, it uses almost no tokens.
+- Hide itself from the sidebar with UpdateProfile. Its chat, memory and routines stay, and with nothing waking it, it uses almost no tokens.
 
 ## 3. Verify (new bot)
+- First, tell the human: "The original <NAME> is on ice as <NAME>-YYYYMMDD and hidden from the sidebar. After the trial period (default 1 week) I'll remind you that you can retire it. If there are problems during the trial, you can resume the old bot." Then create that reminder routine.
 - Recreate the routines from HANDOFF.md, and fire or dry-run each one once.
 - Confirm every connector and secret works with one read.
 - Do one real task in the lane.
 - Report a pass or fail for each item to the human. Anything that fails gets fixed, or the old bot gets resumed.
 
 ## 4. Retire (human only)
-- The new bot sets a reminder after a trial period (default 1 week).
+- The new bot's reminder fires after the trial period (default 1 week).
 - The human decides: delete the old bot, or keep it on ice.
 - Rollback: resume the old bot's routines and redirect the teammates back to it.
