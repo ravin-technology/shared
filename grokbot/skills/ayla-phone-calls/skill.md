@@ -19,11 +19,15 @@ description: Use when the user asks to have "Ayla" (or the assistant) make a pho
 3. Callback/transfer number: use the user's own primary number from their vault (check shared memory for which line is theirs). Never use a family member's line.
 4. Name pronunciation: write the user's surname phonetically in the script (e.g. "Dee-ter", plus the spelling D-E-I-T-E-R). A pronunciation note alone doesn't work; the agent reads the spelling.
 5. Sensitive IDs (SSN, account numbers): include only if the user explicitly approved sharing them for this call; never echo them in chat.
-6. Ask the user only for what's missing, in one widget with steps.
+6. Known contacts: check notes, the owning bot's wiki and memory for anyone we've already dealt with at this place (name, direct number, extension, email, past case number). Put what's on file into the script so the agent confirms it instead of asking from scratch.
+7. Ask the user only for what's missing, in one widget with steps.
 
 ## Script (Objective / Additional context)
 - Tone: polite, assertive, slightly terse; act with full authority for the user so reps have less reason to ask for them.
 - Early in the call: get the rep's name, a direct number or extension, and a case/reference number (for dropped calls and callbacks).
+  - Known contact on file: ask for them by name, then confirm by reading back what we have instead of asking again, e.g. "Is this Danylle? If we need to reach you again, the number we have is (844) 555-0100, extension 123. Is that still right?" Take down any correction. Ask only for what isn't on file (often a case/reference number).
+  - New contact: ask for the rep's name, direct number or extension, and case number.
+- After the call, save any new or corrected contact details to the notes (or the owning bot's wiki) so the next call can just confirm them.
 - If authority is questioned: first offer to email written authorization (ask for the rep's email address), then offer to bring the user on the line.
 - Ask for written confirmation by email to the user's address.
 - Answer hold requests right away ("Yes, I'll hold").
