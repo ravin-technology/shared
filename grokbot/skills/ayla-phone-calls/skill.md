@@ -17,7 +17,9 @@ description: Use when the user asks to have "Ayla" (or the assistant) make a pho
 1. Gather from notes, memory and the owning bot (whoever has the most context, e.g. the estate bot for estate calls): who to call, the objective, account/reference numbers, names and dates the callee will ask for, and what NOT to agree to.
 2. Verify the number on the callee's official website. Prefer the official number over one from notes; say which you used.
 3. Callback/transfer number: use the user's own primary number from their vault (check shared memory for which line is theirs). Never use a family member's line.
-4. Name pronunciation: write names phonetically in the script, the way they should sound (e.g. "Deeter" for Deiter), and leave the real spelling out of anything spoken. A pronunciation note alone doesn't work; the agent reads the spelling.
+4. Name pronunciation: the agent says names the way they're written, so a pronunciation note alone doesn't work. Use both forms, each labeled:
+   - Spoken: write the name phonetically everywhere it will be said (e.g. "Eric Deeter" for Deiter).
+   - Spelling: add one line for when a rep asks to spell it, with the letters separated: "If asked to spell the last name, spell it letter by letter: D, E, I, T, E, R. It's pronounced Deeter but spelled differently." Separated letters get read one at a time, not sounded out.
 5. Sensitive IDs (SSN, account numbers): include only if the user explicitly approved sharing them for this call; never echo them in chat.
 6. Known contacts: check notes, the owning bot's wiki and memory for anyone we've already dealt with at this place (name, direct number, extension, email, past case number). Put what's on file into the script so the agent confirms it instead of asking from scratch.
 7. Ask the user only for what's missing, in one widget with steps.
